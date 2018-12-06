@@ -1,0 +1,81 @@
+table{
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	left : auto;
+	right: auto;
+}
+
+table thead , th, td {
+	text-align:center;
+	padding: 10px;
+}
+#kv table thead , th, td {
+	text-align:left;
+	padding: 10px;
+}
+
+#results table{
+	border: 1px solid darkgray;
+	-webkit-box-shadow: 7px 10px 25px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 7px 10px 25px 0px rgba(0,0,0,0.75);
+	box-shadow: 7px 10px 25px 0px rgba(0,0,0,0.75);
+}
+/* table tr td:nth-child(4):after , table tr td:nth-child(5):after{ */
+/* content: '€'; */
+/* } */
+#results table tr td:nth-child(2) , #results table tr th:nth-child(2){
+	display:none;	
+}
+#results table caption:before{
+	counter-increment: #results table-caption; content: "Tabelle " counter(#results table-caption) " : "
+}
+#results table caption{
+	padding-top:30px;
+	caption-side: bottom;
+}
+#results table thead {	
+	background-color: #333;
+	color: white;
+}
+#results table tr:nth-child(even){
+background-color: lightgray;
+}
+#results table tbody tr:nth-child(odd):hover{
+	background-color: white;
+}
+
+
+.container {
+	width:100%;
+}
+
+.left {
+	width:50%;
+    float:left;
+	display:inline;
+}
+
+.right {
+	width:50%;
+    float:right;
+	display:inline;
+}
+	
+.content{
+	margin:10px;
+	background-color:white;	
+	height:auto;
+	display:block;
+	padding:10px;
+	min-height:80%;
+	min-width: 650px;
+}
+
+
+.wrong{
+background-color:red;
+}
+.correct{
+color:green;
+}
